@@ -8,6 +8,7 @@ import java.util.Scanner;
 Резултатът да се отпечата във формат hh:mm. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59.
 Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри, с водеща нула когато е
 необходимо.
+Made by Vladislav Velinov.
 */
 public class Time {
     public static void main(String[] args) {

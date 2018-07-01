@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 вход  |  	изход		|    вход	|    изход	            |   вход	|    изход          |
 95	  |  Less than 100	|	  120   |Between 100 and 200	|	210	    |Greater than 200   |
-
+Made by Vladislav Velinov.
 */
 
 public class NumberRange {

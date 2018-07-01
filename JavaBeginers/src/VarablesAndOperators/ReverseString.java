@@ -1,9 +1,12 @@
 package VarablesAndOperators;
 
 import java.util.Scanner;
-
+/*
+Made by Vladislav Velinov
+ */
 public class ReverseString {
     public static void main(String[] args) {
+
         Scanner read = new Scanner(System.in);
 
         System.out.println("Enter string to reverse:");

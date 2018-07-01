@@ -12,7 +12,7 @@ Input	Output
 -5 10
 25 30
 60 15	575
-
+Made by Vladislav Velinov.
 */
 public class LiceNaTriugulnik {
     public static void main(String[] args) {

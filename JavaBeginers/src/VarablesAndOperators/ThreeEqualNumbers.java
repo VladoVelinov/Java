@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
 Задача 8. Еднакви 3 числа
 Да се въведат 3 числа и да се отпечата дали са еднакви (yes / no)
+Made by Vladislav Velinov.
 */
 public class ThreeEqualNumbers {
     public static void main(String[] args) {

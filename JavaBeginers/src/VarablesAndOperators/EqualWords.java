@@ -6,6 +6,7 @@ import java.util.Scanner;
 4.Еднакви думи
 Да се напише програма, която въвежда две думи и проверява дали са еднакви. Да не се прави разлика между главни и
 малки думи. Да се изведе “yes” или “no”.
+Made by Vladislav Velinov.
 */
 public class EqualWords {
     public static void main(String[] args) {

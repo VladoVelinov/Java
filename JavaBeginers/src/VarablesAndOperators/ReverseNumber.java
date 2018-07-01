@@ -1,7 +1,9 @@
 package VarablesAndOperators;
 
 import java.util.Scanner;
-
+/*
+Made by Vladislav Velinov.
+*/
 public class ReverseNumber {
     public static void main(String[] args) {
         int num, reversenum = 0;

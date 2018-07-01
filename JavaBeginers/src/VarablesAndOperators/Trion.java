@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 Напишете програма, която въвежда от стандартния 5 на брой цели числа,Да се изведе на стандартния изход "yes",
 ако въведената поредица е трион, или "no", в противен случай.
+Made by Vladislav Velinov.
 */
 public class Trion {
     public static void main(String[] args) {
