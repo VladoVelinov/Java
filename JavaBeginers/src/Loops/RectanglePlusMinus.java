@@ -16,7 +16,7 @@ exit:
 | - - - |
 | - - - |
 + - - - +
-
+Made by Vladislav Velinov.
 */
 public class RectanglePlusMinus {
     public static void main(String[] args) {

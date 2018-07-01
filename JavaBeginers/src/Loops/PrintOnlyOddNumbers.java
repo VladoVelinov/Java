@@ -3,6 +3,7 @@ package Loops;
 /*
 Задача 5
 Редицата от задача 4 да се изведе без четните числа!
+Made by Vladislav Velinov.
 */
 public class PrintOnlyOddNumbers {
     public static void main(String[] args) {

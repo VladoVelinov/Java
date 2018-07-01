@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
 Задача 11
 Напишете програма, която въвежда цяло положително число n и печата на конзолата правоъгълник от n * n звездички.
+Made by Vladislav Velinov.
 */
 public class RectangleWithStars {
     public static void main(String[] args) {

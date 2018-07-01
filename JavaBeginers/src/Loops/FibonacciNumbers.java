@@ -6,6 +6,7 @@ import java.util.Scanner;
 Задача 8
 Програмата трябва да чете число от стандартния вход.
 Да се изведат на екрана първите n на брой числа на фибоначи.
+Made by Vladislav Velinov.
 */
 public class FibonacciNumbers {
     public static void main(String[] args) {

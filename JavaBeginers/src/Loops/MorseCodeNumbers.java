@@ -17,6 +17,7 @@ import java.util.Scanner;
 7: "--.. ";
 8: "---.. ";
 9: "----. ";
+Made by Vladislav Velinov.
 */
 public class MorseCodeNumbers {
     public static void main(String[] args) {

@@ -6,6 +6,7 @@ import java.util.Scanner;
 Задача 23 Месец
 Да се състави програма , която при въвеждане на 1 цяло числo изпечатва името на месеца, който отговаря на числото.
 Ако числото е невалидно да дава съобщение за грешка.
+Made by Vladislav Velinov.
 */
 public class NumberOfTheMonth {
     public static void main(String[] args) {

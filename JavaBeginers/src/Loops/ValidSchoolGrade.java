@@ -9,6 +9,7 @@ import java.util.Scanner;
 което е въвел потребителят, е под 2 да изведе "Invalid input. The number is less than 2."
 Ако потребителят е въвел число по-голямо от 6 да се извежда "Invalid input. The number is bigger than 6."
 След като прочете валидната оценка програмата да изпише с думи значението на оценката(Excellent, Very good, good...)
+Made by Vladislav Velinov.
 */
 
 public class ValidSchoolGrade {

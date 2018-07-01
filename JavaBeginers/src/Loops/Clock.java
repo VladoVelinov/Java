@@ -3,6 +3,7 @@ package Loops;
 /*
 Задача 15  Часовник
 Напише програма, която изписва всички валидни часове от електронен часовник.
+Made by Vladislav Velinov.
 */
 public class Clock {
     public static void main(String[] args) {

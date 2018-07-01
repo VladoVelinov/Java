@@ -6,6 +6,7 @@ import java.util.Scanner;
 Задача 18  Наредени двойки
 Напишете програма, която приема 2 числа (n и m),и изкарва на екрана всички наредени двойки с числа от 1 до 1000,
 като първото се дели на n , а второто на m. Накрая програмата ви трябва да изведе броя им.
+Made by Vladislav Velinov.
 */
 public class PairsInOrder {
     public static void main(String[] args) {

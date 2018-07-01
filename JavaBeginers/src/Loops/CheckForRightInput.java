@@ -6,6 +6,7 @@ import java.util.Scanner;
 Да се напише програма, която чака да прочете съобщението "Hello, java program".
 Докато не прочете съобщението,програмата изписва "Invalid input!".
 След като прочете съобщението програмата изписва "Hello, programmer!" и прекратява изпълнението си.
+Made by Vladislav Velinov.
 */
 
 public class CheckForRightInput {

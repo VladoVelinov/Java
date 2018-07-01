@@ -9,6 +9,7 @@ import java.util.Scanner;
 която проверява дали всички двойки имат еднаква стойност или печата максималната разлика
 между две последователни двойки. Ако всички двойки имат еднаква стойност, отпечатайте "Yes, value=…" + стойността.
 В противен случай отпечатайте "No, maxdiff=…" + максималната разлика.
+Made by Vladislav Velinov.
 */
 public class PairsOfNumbers {
     public static void main(String[] args) {

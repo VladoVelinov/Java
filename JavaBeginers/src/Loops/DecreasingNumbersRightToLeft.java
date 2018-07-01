@@ -8,6 +8,7 @@ import java.util.Scanner;
 Да се състави програма, която при въвеждане на 2 естествени числа от интервала [100..999] намира всички числа
 между въведените (интервала между 2-те въведени числа), в записа на които всяка дясна цифра е по-голяма от
 съседната й лява.
+Made by Vladislav Velinov.
 */
 public class DecreasingNumbersRightToLeft {
     public static void main(String[] args) {

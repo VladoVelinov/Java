@@ -6,6 +6,7 @@ import java.util.Scanner;
 Задача 22 Числа кратни на 6 ?
 Да се състави програма , която при въвеждане на 2 естествени числа от интервала [100 .. 1000] намира всички числа
 между въведените (интервала между 2-те въведени числа), чиято сума от цифрите е кратна на 6.
+Made by Vladislav Velinov.
 */
 public class SumDividedBy6 {
     public static void main(String[] args) {

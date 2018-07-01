@@ -13,7 +13,7 @@ Input:
 Output:
 $
 $$
-
+Made by Vladislav Velinov.
 */
 public class TriangleFromDollarSigns {
     public static void main(String[] args) {

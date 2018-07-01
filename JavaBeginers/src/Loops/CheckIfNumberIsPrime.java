@@ -1,7 +1,9 @@
 package Loops;
 
 import java.util.Scanner;
-
+/*
+Made by Vladislav Velinov.
+ */
 public class CheckIfNumberIsPrime {
     public static void main(String[] args) {
         int n, sqrtN, i;

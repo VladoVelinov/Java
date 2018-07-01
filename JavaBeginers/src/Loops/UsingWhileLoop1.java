@@ -6,6 +6,7 @@ package Loops;
 
 вход | изход
      | 1 2 4 8 16 32 64 128 256 512
+Made by Vladislav Velinov.
 */
 
 public class UsingWhileLoop1 {

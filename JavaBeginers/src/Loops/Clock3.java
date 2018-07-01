@@ -16,6 +16,7 @@ import java.util.Scanner;
         13:37
         13:38
         13:39
+Made by Vladislav Velinov.
 */
 
 public class Clock3 {

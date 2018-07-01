@@ -6,6 +6,7 @@ import java.util.Scanner;
 Задача 7
 Програмата трябва да чете число от стандартния вход.
 Да се изведат на екрана всички числа от 1 до n(числото от потребителя),които се делят едновременно на 3 и на 5.
+Made by Vladislav Velinov.
 */
 public class NumbersDividedBy3And5 {
     public static void main(String[] args) {
