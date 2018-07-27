@@ -17,7 +17,7 @@ public class CheckElementsSum {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter how much elements we will have?");
+        System.out.println("How much elements we will have?");
         n = sc.nextInt();
         int sumOfElement = 0;
         int maxNum = Integer.MIN_VALUE;
