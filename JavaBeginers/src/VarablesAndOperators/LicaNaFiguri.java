@@ -20,12 +20,11 @@ public class LicaNaFiguri {
         Scanner sc = new Scanner(System.in);
         String figure = sc.nextLine().toLowerCase();
 
-        double area;
         switch (figure) {
             case "square":
                 System.out.println("You have entered square! Now enter side a:");
                 double squareSide = Double.parseDouble(sc.nextLine());
-                area = (squareSide) * (squareSide);
+                double area = (squareSide) * (squareSide);
                 System.out.print("The area of this " + figure + " is ");
                 System.out.printf("%.03f", area);
                 break;

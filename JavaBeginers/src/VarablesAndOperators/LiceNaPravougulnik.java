@@ -21,6 +21,5 @@ public class LiceNaPravougulnik {
         b = Integer.parseInt(input);
 
         System.out.println("The area of this rectangle is " + a * b);
-
     }
 }

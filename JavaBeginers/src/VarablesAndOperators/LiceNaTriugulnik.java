@@ -17,32 +17,27 @@ Made by Vladislav Velinov.
 public class LiceNaTriugulnik {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int ax, ay, bx, by, cx, cy;
 
         System.out.println("Give coordinates ax: ");
-        ax = sc.nextInt();
+        int ax = Integer.parseInt(sc.nextLine());
         System.out.println("Give coordinates ay: ");
-        ay = sc.nextInt();
+        int ay = Integer.parseInt(sc.nextLine());
         System.out.println("Give coordinates bx: ");
-        bx = sc.nextInt();
+        int bx = Integer.parseInt(sc.nextLine());
         System.out.println("Give coordinates by: ");
-        by = sc.nextInt();
+        int by = Integer.parseInt(sc.nextLine());
         System.out.println("Give coordinates cx: ");
-        cx = sc.nextInt();
+        int cx = Integer.parseInt(sc.nextLine());
         System.out.println("Give coordinates cy: ");
-        cy = sc.nextInt();
+        int cy = Integer.parseInt(sc.nextLine());
 
-
-        double ab, ac, bc;
-
-
-        ab = Math.pow((ax - bx), 2) + Math.pow((ay - by), 2);
+        double ab = Math.pow((ax - bx), 2) + Math.pow((ay - by), 2);
         ab = Math.sqrt(ab);
 
-        ac = Math.pow((ax - cx), 2) + Math.pow((ay - cy), 2);
+        double ac = Math.pow((ax - cx), 2) + Math.pow((ay - cy), 2);
         ac = Math.sqrt(ac);
 
-        bc = Math.pow((bx - cx), 2) + Math.pow((by - cy), 2);
+        double bc = Math.pow((bx - cx), 2) + Math.pow((by - cy), 2);
         bc = Math.sqrt(bc);
 
         if ((ab + bc) > ac && (ab + ac) > bc && (bc + ac) > ab) {
