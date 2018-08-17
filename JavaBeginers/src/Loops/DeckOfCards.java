@@ -11,12 +11,10 @@ Made by Vladislav Velinov.
 */
 public class DeckOfCards {
     public static void main(String[] args) {
-        int num, cardIndex, cardColor;
-        String str = "", card = "";
-
         System.out.println("Enter Number in range 1-52:");
         Scanner sc = new Scanner(System.in);
-        num = Integer.parseInt(sc.nextLine());
+        int num = Integer.parseInt(sc.nextLine());
+        String str = "", card = "";
 
         while (num < 1 || num > 52) {
 
@@ -26,8 +24,8 @@ public class DeckOfCards {
 
         for (int i = num; i <= 52; i++) {
 
-            cardIndex = i % 13;
-            cardColor = (int) Math.round((i / 13) + .5);
+            int cardIndex = i % 13;
+            int cardColor = (int) Math.round((i / 13) + .5);
 
             switch (cardIndex) {
                 case 1:

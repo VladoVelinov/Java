@@ -11,28 +11,24 @@ import java.util.Scanner;
 След като прочете валидната оценка програмата да изпише с думи значението на оценката(Excellent, Very good, good...)
 Made by Vladislav Velinov.
 */
-
 public class ValidSchoolGrade {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int input;
-
         System.out.println("Enter school grade: ");
-        input = sc.nextInt();
+        int input = sc.nextInt();
 
         while (input < 2 || input > 6) {
 
             if (input < 2) {
                 System.out.println("Invalid input. The number is lesser than 2.");
-                input = sc.nextInt();
+                input = Integer.parseInt(sc.nextLine());
             }
 
             if (input > 6) {
                 System.out.println("Invalid input. The number is bigger than 6.");
-                input = sc.nextInt();
+                input = Integer.parseInt(sc.nextLine());
             }
-
         }
 
         switch (input) {
@@ -56,4 +52,3 @@ public class ValidSchoolGrade {
         }
     }
 }
-

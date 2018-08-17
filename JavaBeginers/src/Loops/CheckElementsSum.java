@@ -13,17 +13,14 @@ Made by Vladislav Velinov.
 public class CheckElementsSum {
     public static void main(String[] args) {
 
-        int n, num, i;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter how much elements we will have?");
-        n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
         int sumOfElement = 0;
         int maxNum = Integer.MIN_VALUE;
 
-        for (i = 0; i < n; i++) {
-            num = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int num = Integer.parseInt(sc.nextLine());
             sumOfElement += num;
 
             if (num > maxNum) {

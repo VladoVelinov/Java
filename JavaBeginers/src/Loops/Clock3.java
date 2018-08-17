@@ -1,6 +1,7 @@
 package Loops;
 
 import java.util.Scanner;
+
 /*
 Задача 17  Часовник 3
 Променете програмата ви, така че да приема 4 цели числа - 2x(час и минути )и да изписва всички валидни часове
@@ -18,23 +19,26 @@ import java.util.Scanner;
         13:39
 Made by Vladislav Velinov.
 */
-
 public class Clock3 {
     public static void main(String[] args) {
 
-        int hoursMin, minutesMin, hoursMax, minutesMax;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter two numbers for starting time and minutes!");
-        hoursMin = sc.nextInt();
-        minutesMin = sc.nextInt();
+        int hoursMin = Integer.parseInt(sc.nextLine());
+        int minutesMin = Integer.parseInt(sc.nextLine());
 
         System.out.println("Enter second two numbers for end time and minutes!");
-        hoursMax = sc.nextInt();
-        minutesMax = sc.nextInt();
+        int hoursMax = Integer.parseInt(sc.nextLine());
+        int minutesMax = Integer.parseInt(sc.nextLine());
 
-        if (hoursMin < 0 || hoursMin > 23 || hoursMax < 0 || hoursMax > 23 || minutesMin < 0 || minutesMin > 59 || minutesMax < 0 || minutesMax > 59) {
+        if (hoursMin < 0
+            || hoursMin > 23
+            || hoursMax < 0
+            || hoursMax > 23
+            || minutesMin < 0
+            || minutesMin > 59
+            || minutesMax < 0
+            || minutesMax > 59) {
             System.out.println("Invalid Input!");
         } else {
 

@@ -10,13 +10,13 @@ Made by Vladislav Velinov.
 */
 public class NumbersDividedBy3And5 {
     public static void main(String[] args) {
-        int n;
+
         int i = 1;
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter Number: ");
-        n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
 
         while ((i >= 1) && (i <= n)) {
             if ((i % 3 == 0) && (i % 5 == 0)) {

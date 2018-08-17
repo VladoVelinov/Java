@@ -10,20 +10,18 @@ Made by Vladislav Velinov.
 public class RectangleWithStars {
     public static void main(String[] args) {
 
-        int n, row;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("How many stars will have this rectangle?");
-        n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
         String stars = "*";
-        String starsMax = "";
+        StringBuilder sb = new StringBuilder();
 
-        for (row = 0; row < n; row++) {
-            starsMax += stars;
+        for (int i = 0; i < n; i++) {
+            sb.append(stars.charAt(0));
         }
-        for (row = 0; row < n; row++) {
-            System.out.println(starsMax);
+
+        for (int i = 0; i < n; i++) {
+            System.out.println(sb);
         }
     }
 }

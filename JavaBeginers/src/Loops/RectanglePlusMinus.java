@@ -21,23 +21,25 @@ Made by Vladislav Velinov.
 public class RectanglePlusMinus {
     public static void main(String[] args) {
 
-        int n, row;
-        String minus = "-";
-        String plus = "+";
-        String symbol = "|";
-        String minusMax = "";
-
         Scanner sc = new Scanner(System.in);
+        System.out.println("How big will be this rectangle?");
+        int n = Integer.parseInt(sc.nextLine());
+        String minus = "- ";
+        String plus = "+ ";
+        String symbol = "| ";
 
-        System.out.println("How big will have this rectangle?");
-        n = sc.nextInt();
+        StringBuilder minusMax = new StringBuilder();
 
-        for (row = 0; row < n - 2; row++) {
-            minusMax += minus;
+        for (int i = 0; i < 2 * (n - 2); i++) {
+            if (i % 2 == 0) {
+                minusMax.append(minus.charAt(0));
+            } else {
+                minusMax.append(minus.charAt(1));
+            }
         }
 
-        for (row = 0; row < n; row++) {
-            if ((row == 0) || (row == n - 1)) {
+        for (int i = 0; i < n; i++) {
+            if ((i == 0) || (i == n - 1)) {
                 System.out.println(plus + minusMax + plus);
             } else {
                 System.out.println(symbol + minusMax + symbol);

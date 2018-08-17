@@ -11,22 +11,18 @@ Made by Vladislav Velinov.
 public class PairsInOrder {
     public static void main(String[] args) {
 
-        int n, m, n1, m1, counter = 0;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter two numbers!");
-        n = sc.nextInt();
-        m = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
+        int m = Integer.parseInt(sc.nextLine());
+        int counter = 0;
 
-        for (int i = n; i <= 1000; i += n) {
+        for (int i = 1; i <= 1000; i++) {
             if (i % n == 0) {
-                n1 = i;
-                for (int y = m; y <= 1000; y++) {
-                    if (y % m == 0) {
-                        m1 = y;
+                for (int j = 1; j <= 1000; j++) {
+                    if (j % m == 0) {
                         counter++;
-                        System.out.println(n1 + "," + m1);
+                        System.out.println(i + "," + j);
                     }
                 }
             }

@@ -10,15 +10,11 @@ Made by Vladislav Velinov.
 */
 public class NumberOfTheMonth {
     public static void main(String[] args) {
-        int month;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter month number 1-12");
-        month = Integer.parseInt(sc.nextLine());
+        int month = Integer.parseInt(sc.nextLine());
 
         while (month < 1 || month > 12) {
-
             System.out.println("Invalid Input!");
             month = Integer.parseInt(sc.nextLine());
         }

@@ -13,20 +13,19 @@ Made by Vladislav Velinov.
 */
 public class PairsOfNumbers {
     public static void main(String[] args) {
-        int n, a, b, sum, i;
+
         int maxDiff = Integer.MIN_VALUE;
 
         Scanner sc = new Scanner(System.in);
-
         System.out.println("How many pairs will have?");
-        n = sc.nextInt();
-        a = sc.nextInt();
-        b = sc.nextInt();
-        sum = a + b;
+        int n = Integer.parseInt(sc.nextLine());
+        int a = Integer.parseInt(sc.nextLine());
+        int b = Integer.parseInt(sc.nextLine());
+        int sum = a + b;
 
-        for (i = 1; i < n; i++) {
-            a = sc.nextInt();
-            b = sc.nextInt();
+        for (int i = 1; i < n; i++) {
+            a = Integer.parseInt(sc.nextLine());
+            b = Integer.parseInt(sc.nextLine());
 
             if (Math.abs(a + b - sum) > maxDiff)
                 maxDiff = Math.abs(a + b - sum);

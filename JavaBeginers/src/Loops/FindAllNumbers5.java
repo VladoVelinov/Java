@@ -11,13 +11,11 @@ Made by Vladislav Velinov.
 public class FindAllNumbers5 {
     public static void main(String[] args) {
 
-        int n1, n2, n3, y, counter = 0;
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter two numbers!");
-        n1 = sc.nextInt();
-        n2 = sc.nextInt();
+        int n1 = Integer.parseInt(sc.nextLine());
+        int n2 = Integer.parseInt(sc.nextLine());
+        int counter = 0;
 
         while (n1 < 100 || n1 > 1000 || n2 < 100 || n2 > 1000) {
             System.out.println("Invalid Input!");
@@ -26,13 +24,13 @@ public class FindAllNumbers5 {
         }
 
         if (n1 > n2) {
-            n3 = n1;
+            int n3 = n1;
             n1 = n2;
             n2 = n3;
         }
 
         for (int i = n1; i < n2; i++) {
-            y = i;
+            int y = i;
             do {
                 if (y % 10 == 5) {
                     counter++;

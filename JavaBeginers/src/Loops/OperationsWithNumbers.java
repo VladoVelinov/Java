@@ -13,14 +13,12 @@ Made by Vladislav Velinov.
 */
 public class OperationsWithNumbers {
     public static void main(String[] args) {
-        int n1, n2;
 
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter two numbers n1, n2 and operator ( + , - , *, / , % )");
-        n1 = sc.nextInt();
-        n2 = sc.nextInt();
-        sc.nextLine(); //This will remove phantom \n from previous command nextInt()!!!!
+        int n1 = Integer.parseInt(sc.nextLine());
+        int n2 = Integer.parseInt(sc.nextLine());
+//        sc.nextLine(); //This will remove phantom \n from if previous command is nextInt()!!!!
         String operator = sc.nextLine();
 
         switch (operator) {

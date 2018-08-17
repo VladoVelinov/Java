@@ -22,12 +22,12 @@ Made by Vladislav Velinov.
 public class MorseCodeNumbers {
     public static void main(String[] args) {
 
-        int number, num, reverseNum = 0;
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number!");
-        num = sc.nextInt();
+        int num = Integer.parseInt(sc.nextLine());
+        int reverseNum = 0;
 
         if (num % 10 == 0) {
             System.out.print("----- ");
@@ -40,7 +40,7 @@ public class MorseCodeNumbers {
         }
 
         do {
-            number = reverseNum % 10;
+            int number = reverseNum % 10;
             switch (number) {
                 case 0:
                     System.out.print("----- ");

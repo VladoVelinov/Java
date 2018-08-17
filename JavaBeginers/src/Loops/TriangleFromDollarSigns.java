@@ -18,18 +18,15 @@ Made by Vladislav Velinov.
 public class TriangleFromDollarSigns {
     public static void main(String[] args) {
 
-        int n, row;
-        String symbol = "$";
-        String symbolsMax = "";
-
         Scanner sc = new Scanner(System.in);
-
         System.out.println("How many symbols will have this triangle?");
-        n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
+        String symbol = "$";
+        StringBuilder sb = new StringBuilder();
 
-        for (row = 0; row < n; row++) {
-            symbolsMax += symbol;
-            System.out.println(symbolsMax);
+        for (int i = 0; i < n; i++) {
+            sb.append(symbol.charAt(0));
+            System.out.println(sb);
         }
     }
 }
