@@ -7,10 +7,10 @@ Made by Vladislav Velinov
 public class ReverseString {
     public static void main(String[] args) {
 
-        Scanner read = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter string to reverse:");
-        String str = read.nextLine();
+        String str = sc.nextLine();
 
         StringBuilder sb = new StringBuilder();
 
