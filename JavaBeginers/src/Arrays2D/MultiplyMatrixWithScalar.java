@@ -41,8 +41,10 @@ public class MultiplyMatrixWithScalar {
 
         for (int i = 0; i < scalarMatrix.length; i++) {
             for (int j = 0; j < scalarMatrix[0].length; j++) {
-                System.out.println(scalarMatrix[i][j]);
+                System.out.print(" " + scalarMatrix[i][j]);
             }
+            System.out.print("\n");
         }
+        System.out.print("\n");
     }
 }

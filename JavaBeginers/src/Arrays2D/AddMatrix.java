@@ -35,7 +35,8 @@ public class AddMatrix {
 
         int[][] matrix1 = new int[][]{{0, 1, 2}, {9, 8, 7}};
         int[][] matrix2 = new int[][]{{6, 5, 4}, {3, 4, 5}};
-        addMatrix(matrix1, matrix2);
+
+        DisplayMatrix.displayMatrix(addMatrix(matrix1, matrix2));
     }
 
 
@@ -48,13 +49,9 @@ public class AddMatrix {
                     matrixSum[i][j] = m1[i][j] + m2[i][j];
                 }
             }
-
-            for (int i = 0; i < matrixSum.length; i++) {
-                for (int j = 0; j < matrixSum[0].length; j++) {
-                    System.out.println(matrixSum[i][j]);
-                }
-            }
+            return matrixSum;
+        }else {
+            return null;
         }
-        return null;
     }
 }

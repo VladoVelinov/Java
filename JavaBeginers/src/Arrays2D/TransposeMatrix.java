@@ -12,7 +12,6 @@ Made by Vladislav Velinov.
 public class TransposeMatrix {
     public static void main(String[] args) {
 
-
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter two numbers for dimensions of matrix and then matrix elements");
 //        int n = Integer.parseInt(sc.nextLine());
@@ -25,9 +24,7 @@ public class TransposeMatrix {
 //        }
 
         int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-
-        transposeMatrix(matrix);
-
+        DisplayMatrix.displayMatrix(transposeMatrix(matrix));
     }
 
     private static int[][] transposeMatrix(int[][] m) {
@@ -37,12 +34,6 @@ public class TransposeMatrix {
                 transMatrix[i][j] = m[j][i];
             }
         }
-
-        for (int i = 0; i < transMatrix.length; i++) {
-            for (int j = 0; j < transMatrix[0].length; j++) {
-                System.out.println(transMatrix[i][j]);
-            }
-        }
-        return null;
+        return transMatrix;
     }
 }

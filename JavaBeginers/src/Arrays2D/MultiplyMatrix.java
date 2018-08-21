@@ -5,8 +5,10 @@ import java.util.Scanner;
 /*
 Задача 5
 Да се реализира функция int[][] MultiplyMatrix(int[][] m1,int[][] m2), която връща нова матрица, която е
-произведението на матриците, които са подадени. Забележка. Да се обърне внимание кога може да умножат две матрици
-и как става това. Ако двете матрици не могат да бъдат умножени, да се върне нулев пойнтер/указател.
+произведението на матриците, които са подадени.
+Забележка.
+Да се обърне внимание кога може да умножат две матрици и как става това. Ако двете матрици не могат да бъдат умножени,
+да се върне нулев пойнтер/указател.
 Made by Vladislav Velinov.
 */
 public class MultiplyMatrix {
@@ -37,7 +39,7 @@ public class MultiplyMatrix {
         int[][] matrix1 = new int[][]{{1, 4, 6, 10}, {2, 7, 5, 3}};
         int[][] matrix2 = new int[][]{{1, 4, 6}, {2, 7, 5}, {9, 0, 11}, {3, 1, 0}};
 
-        multiplyByMatrix(matrix1, matrix2);
+        DisplayMatrix.displayMatrix(multiplyByMatrix(matrix1, matrix2));
     }
 
     private static int[][] multiplyByMatrix(int[][] m1, int[][] m2) {
@@ -53,12 +55,6 @@ public class MultiplyMatrix {
                 for (int k = 0; k < m1ColLength; k++) {
                     mResult[i][j] += m1[i][k] * m2[k][j];
                 }
-            }
-        }
-
-        for (int i = 0; i < mResult.length; i++) {
-            for (int j = 0; j < mResult[0].length; j++) {
-                System.out.println(mResult[i][j]);
             }
         }
         return mResult;
