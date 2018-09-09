@@ -11,18 +11,18 @@ Made by Vladislav Velinov.
 public class RotationOn90Degree {
     public static void main(String[] args) {
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter two numbers for dimensions of matrix and then matrix elements");
-//        int n = Integer.parseInt(sc.nextLine());
-//        int m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers for dimensions of matrix and then matrix elements");
+        int n = Integer.parseInt(sc.nextLine());
+        int m = Integer.parseInt(sc.nextLine());
+        int[][] matrix = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
 
-        int[][] matrix = new int[][]{{4, 5}, {3, 1}};
+//        int[][] matrix = new int[][]{{4, 5}, {3, 1}};
 //        DisplayMatrix.displayMatrix(matrix);
         DisplayMatrix.displayMatrix(rotateMatrixClockwise(matrix));
 //        DisplayMatrix.displayMatrix(rotateMatrixCounterClockwise(matrix));

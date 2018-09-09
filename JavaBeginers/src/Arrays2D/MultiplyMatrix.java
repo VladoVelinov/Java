@@ -15,29 +15,29 @@ public class MultiplyMatrix {
 
     public static void main(String[] args) {
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter two numbers for dimensions and then elements of the first matrix");
-//        int n = Integer.parseInt(sc.nextLine());
-//        int m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix1 = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix1[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
-//
-//        System.out.println("Enter two numbers for dimensions and then elements of the second matrix");
-//        n = Integer.parseInt(sc.nextLine());
-//        m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix2 = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix2[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers for dimensions and then elements of the first matrix");
+        int n = Integer.parseInt(sc.nextLine());
+        int m = Integer.parseInt(sc.nextLine());
+        int[][] matrix1 = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix1[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
 
-        int[][] matrix1 = new int[][]{{1, 4, 6, 10}, {2, 7, 5, 3}};
-        int[][] matrix2 = new int[][]{{1, 4, 6}, {2, 7, 5}, {9, 0, 11}, {3, 1, 0}};
+        System.out.println("Enter two numbers for dimensions and then elements of the second matrix");
+        n = Integer.parseInt(sc.nextLine());
+        m = Integer.parseInt(sc.nextLine());
+        int[][] matrix2 = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix2[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
+
+//        int[][] matrix1 = new int[][]{{1, 4, 6, 10}, {2, 7, 5, 3}};
+//        int[][] matrix2 = new int[][]{{1, 4, 6}, {2, 7, 5}, {9, 0, 11}, {3, 1, 0}};
 
         DisplayMatrix.displayMatrix(multiplyByMatrix(matrix1, matrix2));
     }

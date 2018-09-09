@@ -12,18 +12,18 @@ Made by Vladislav Velinov.
 public class TransposeMatrix {
     public static void main(String[] args) {
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter two numbers for dimensions of matrix and then matrix elements");
-//        int n = Integer.parseInt(sc.nextLine());
-//        int m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers for dimensions of matrix and then matrix elements");
+        int n = Integer.parseInt(sc.nextLine());
+        int m = Integer.parseInt(sc.nextLine());
+        int[][] matrix = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
 
-        int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//        int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         DisplayMatrix.displayMatrix(transposeMatrix(matrix));
     }
 

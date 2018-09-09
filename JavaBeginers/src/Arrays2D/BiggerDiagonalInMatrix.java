@@ -41,8 +41,8 @@ public class BiggerDiagonalInMatrix {
             }
         }
 
-        System.out.println(sum1);
-        System.out.println(sum2);
+//        System.out.println(sum1);
+//        System.out.println(sum2);
 
         if (sum1 > sum2) {
             System.out.println(sum1 + " is greater");

@@ -12,29 +12,29 @@ Made by Vladislav Velinov.
 public class AddMatrix {
     public static void main(String[] args) {
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter two numbers for dimensions and then elements of the first matrix");
-//        int n = Integer.parseInt(sc.nextLine());
-//        int m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix1 = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix1[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
-//
-//        System.out.println("Enter two numbers for dimensions and then elements of the second matrix");
-//        n = Integer.parseInt(sc.nextLine());
-//        m = Integer.parseInt(sc.nextLine());
-//        int[][] matrix2 = new int[n][m];
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                matrix2[i][j] = Integer.parseInt(sc.nextLine());
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers for dimensions and then elements of the first matrix");
+        int n = Integer.parseInt(sc.nextLine());
+        int m = Integer.parseInt(sc.nextLine());
+        int[][] matrix1 = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix1[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
 
-        int[][] matrix1 = new int[][]{{0, 1, 2}, {9, 8, 7}};
-        int[][] matrix2 = new int[][]{{6, 5, 4}, {3, 4, 5}};
+        System.out.println("Enter two numbers for dimensions and then elements of the second matrix");
+        n = Integer.parseInt(sc.nextLine());
+        m = Integer.parseInt(sc.nextLine());
+        int[][] matrix2 = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix2[i][j] = Integer.parseInt(sc.nextLine());
+            }
+        }
+
+//        int[][] matrix1 = new int[][]{{0, 1, 2}, {9, 8, 7}};
+//        int[][] matrix2 = new int[][]{{6, 5, 4}, {3, 4, 5}};
 
         DisplayMatrix.displayMatrix(addMatrix(matrix1, matrix2));
     }
@@ -50,7 +50,7 @@ public class AddMatrix {
                 }
             }
             return matrixSum;
-        }else {
+        } else {
             return null;
         }
     }
