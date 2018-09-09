@@ -18,7 +18,7 @@ public class DecimalToBinary {
     public static void main(String arr[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter integer number for conversion: ");
-        int number = sc.nextInt();
+        int number = Integer.parseInt(sc.nextLine());
         DecimalToBinary obj = new DecimalToBinary();
         System.out.println("Binary representation of " + number + " is: ");
         obj.convertBinary(number);

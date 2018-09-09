@@ -23,7 +23,7 @@ public class BinaryToDecimal {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter integer number for conversion: ");
-        int number = sc.nextInt();
+        int number = Integer.parseInt(sc.nextLine());
         BinaryToDecimal obj = new BinaryToDecimal();
         System.out.println("The number " + number + " decimal is " + obj.ConvertToDecimal(number));
     }
