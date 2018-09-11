@@ -22,7 +22,7 @@ public class SumOfElements {
         }
 
         for (int i = 0; i < n; i++) {
-            sum = sum + (myArray[i]);
+            sum += myArray[i];
         }
         System.out.println(sum);
     }

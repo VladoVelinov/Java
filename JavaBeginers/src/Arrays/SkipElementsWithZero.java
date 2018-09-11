@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static Arrays.DisplayArray.displayArray;
+
 /*
 Задача 16
 Да се напише програма, която на първия ред приема цяло число N, което е големина на масив и после  N на брой числа,
@@ -38,8 +40,6 @@ public class SkipElementsWithZero {
             myArray[i] = list.get(i);
         }
 
-        for (int i : myArray) {
-            System.out.print(i + " ");
-        }
+        displayArray(myArray);
     }
 }

@@ -2,6 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
+import static Arrays.DisplayArray.displayArray;
+
 /*
 Задача 17
 Да се напише програма, която на първия ред приема цяло число N, което е големина на масив и после  N на брой числа,
@@ -38,8 +40,6 @@ public class ChangeAfterBiggestNumber {
             }
         }
 
-        for (int i : myArray1) {
-            System.out.print(i + " ");
-        }
+        displayArray(myArray1);
     }
 }

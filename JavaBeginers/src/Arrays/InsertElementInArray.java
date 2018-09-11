@@ -2,6 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
+import static Arrays.DisplayArray.displayArray;
+
 /*
 Задача 12
 Да се напише програма, която на първия ред приема цяло число N и заделете масив с големина N+1 и после  N на брой
@@ -36,8 +38,6 @@ public class InsertElementInArray {
             myNextArray[i + 1] = myArray[i];
         }
 
-        for (int i = 0; i < myNextArray.length; i++) {
-            System.out.print(myNextArray[i] + " ");
-        }
+        displayArray(myNextArray);
     }
 }

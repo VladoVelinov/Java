@@ -1,6 +1,10 @@
 package Arrays;
 
+import Arrays2D.DisplayMatrix;
+
 import java.util.Scanner;
+
+import static Arrays.DisplayArray.displayArray;
 
 /*
 Задача 14
@@ -36,8 +40,6 @@ public class BiggerNumberFromTwoArrays {
             }
         }
 
-        for (int i : myArray3) {
-            System.out.print(i + " ");
-        }
+        displayArray(myArray3);
     }
 }

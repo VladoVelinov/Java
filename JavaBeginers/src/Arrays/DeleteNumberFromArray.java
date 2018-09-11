@@ -2,6 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
+import static Arrays.DisplayArray.displayArray;
+
 /*
 Задача 10
 Да се напише програма, която на първия ред приема цяло число N, което е големина на масив и после  N на брой числа,
@@ -41,8 +43,6 @@ public class DeleteNumberFromArray {
             }
         }
 
-        for (int i : myTempArray) {
-            System.out.print(i + " ");
-        }
+        displayArray(myTempArray);
     }
 }

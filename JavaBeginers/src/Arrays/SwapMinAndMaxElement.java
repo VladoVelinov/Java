@@ -2,6 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
+import static Arrays.DisplayArray.displayArray;
+
 /*
 Задача 2
 Да се напише програма, която на първия ред приема цяло число N, което е големина на масив и после  N на брой числа,
@@ -45,8 +47,6 @@ public class SwapMinAndMaxElement {
         myArray[indexMin] = min;
         myArray[indexMax] = max;
 
-        for (int i = 0; i < n; i++) {
-            System.out.print(myArray[i] + " ");
-        }
+        displayArray(myArray);
     }
 }

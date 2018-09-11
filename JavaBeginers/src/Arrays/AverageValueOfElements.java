@@ -22,7 +22,7 @@ public class AverageValueOfElements {
         }
 
         for (int i = 0; i < n; i++) {
-            sum = sum + (myArray[i]);
+            sum += myArray[i];
         }
         System.out.printf("%.3f", (double) sum / n);
     }

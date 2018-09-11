@@ -26,7 +26,7 @@ public class SumOfElementsComDiv {
         }
 
         for (int i = 0; i < n; i++) {
-            sum = sum + (myArray[i]);
+            sum += myArray[i];
         }
 
         List<Integer> list = new ArrayList<>();
