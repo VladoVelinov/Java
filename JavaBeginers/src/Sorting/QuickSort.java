@@ -10,7 +10,7 @@ public class QuickSort {
         printArray(array);
     }
 
-    int partition(int arr[], int low, int high) {
+    private int partition(int arr[], int low, int high) {
         int pivot = arr[high];
         int i = (low - 1);
 
@@ -30,7 +30,7 @@ public class QuickSort {
         return i + 1;
     }
 
-    void quickSort(int arr[], int low, int high) {
+    private void quickSort(int arr[], int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
 

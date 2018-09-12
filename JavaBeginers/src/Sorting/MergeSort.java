@@ -11,7 +11,7 @@ class MergeSort {
         printArray(array);
     }
 
-    void merge(int arr[], int left, int middle, int right) {
+    private void merge(int arr[], int left, int middle, int right) {
         int n1 = middle - left + 1;
         int n2 = right - middle;
         int L[] = new int[n1];
@@ -51,7 +51,7 @@ class MergeSort {
         }
     }
 
-    void sort(int arr[], int left, int right) {
+    private void sort(int arr[], int left, int right) {
         if (left < right) {
             int middle = (left + right) / 2;
 
