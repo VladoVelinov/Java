@@ -1,15 +1,15 @@
 package OOP.abstraction.collections;
 
-public class AddCollectionArray implements AddCollection{
-    private String[] array;
+public class AddCollectionArray<T> implements AddCollection<T>{
+    private Object[] array;
     private int index = 0;
 
     public AddCollectionArray(int size){
-        this.array = new String[size];
+        this.array = new Object[size];
     }
 
     @Override
-    public int add(String str) {
+    public int add(T str) {
         this.array[index] = str;
         index++;
 

@@ -20,16 +20,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class abstraction {
     public static void main(String[] args) {
         collectionsMain();
     }
 
-    public static void collectionsMain() {
-        AddCollection ac;
-        AddRemoveCollection arc;
-        MyList ml;
-
+    public static void collectionsMain(){
+        AddCollection<Integer> ac;
+        AddRemoveCollection<Integer> arc;
+        MyList<Integer> ml;
 
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -40,15 +40,15 @@ public class abstraction {
         ml = new MyListArray(tokens.length);
 
         for (String str : tokens){
-            System.out.print(ac.add(str) + " ");
+            System.out.print(ac.add(Integer.parseInt(str)) + " ");
         }
         System.out.println();
         for (String str : tokens){
-            System.out.print(arc.add(str) + " ");
+            System.out.print(arc.add(Integer.parseInt(str)) + " ");
         }
         System.out.println();
         for (String str : tokens){
-            System.out.print(ml.add(str) + " ");
+            System.out.print(ml.add(Integer.parseInt(str)) + " ");
         }
         System.out.println();
 
@@ -64,6 +64,7 @@ public class abstraction {
         }
         System.out.println();
     }
+
     public static void militaryEliteMain(){
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -108,6 +109,7 @@ public class abstraction {
             input = sc.nextLine();
         }
     }
+
     public static void foodShortageMain() {
         Scanner sc = new Scanner(System.in);
 
@@ -139,6 +141,7 @@ public class abstraction {
 
 
     }
+
     public static void birthdaycelebrations() {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -175,6 +178,7 @@ public class abstraction {
             }
         }
     }
+
     public static void borderControlMain() {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -208,6 +212,7 @@ public class abstraction {
             }
         }
     }
+
     public static void telephonyMain() {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -225,10 +230,12 @@ public class abstraction {
             sm.browse(url);
         }
     }
+
     public static void ferrariMain() {
         Car car = new Lada("Dinko");
         System.out.println(car.toString());
     }
+
     public static void multipleImplementationMain() {
         Class[] citizenInterfaces = Citizen.class.getInterfaces();
         if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
@@ -249,6 +256,7 @@ public class abstraction {
 
         }
     }
+
     public static void interfacePersonMain() {
         Class[] citizenInterfaces = Citizen.class.getInterfaces();
         if (Arrays.asList(citizenInterfaces).contains(Person.class)) {
@@ -262,6 +270,7 @@ public class abstraction {
             System.out.println(person.getAge());
         }
     }
+
     private static boolean isNameTaken(String name, Buyer[] buyers) {
         for (Buyer buyer : buyers) {
             if (buyer != null) {
@@ -271,6 +280,7 @@ public class abstraction {
         }
         return false;
     }
+
     private static void CreateBuyer(Buyer[] buyers, String[] tokens, int i) {
 
         if (isNameTaken(tokens[0], buyers))

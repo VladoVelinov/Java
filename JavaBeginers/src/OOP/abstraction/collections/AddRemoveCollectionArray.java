@@ -1,15 +1,15 @@
 package OOP.abstraction.collections;
 
-public class AddRemoveCollectionArray implements AddRemoveCollection{
-    protected String[] array;
+public class AddRemoveCollectionArray<T> implements AddRemoveCollection<T>{
+    protected Object[] array;
     protected int numberOfElements = 0;
 
     public AddRemoveCollectionArray(int size){
-        this.array = new String[size];
+        this.array = new Object[size];
     }
 
     @Override
-    public int add(String str) {
+    public int add(T str) {
         this.shift();
         this.array[0] = str;
         this.numberOfElements++;
@@ -18,10 +18,10 @@ public class AddRemoveCollectionArray implements AddRemoveCollection{
     }
 
     @Override
-    public String remove() {
+    public T remove() {
         int index = numberOfElements - 1;
         numberOfElements--;
-        return array[index];
+        return (T)array[index];
     }
 
     protected void shift(){

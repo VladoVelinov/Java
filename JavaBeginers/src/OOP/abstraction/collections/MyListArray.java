@@ -1,13 +1,13 @@
 package OOP.abstraction.collections;
 
-public class MyListArray extends AddRemoveCollectionArray implements MyList{
+public class MyListArray<T> extends AddRemoveCollectionArray<T> implements MyList<T>{
     public MyListArray(int size){
         super(size);
     }
 
     @Override
-    public String remove() {
-        String res = array[0];
+    public T remove() {
+        T res = (T)array[0];
         this.leftShift();
         numberOfElements--;
 

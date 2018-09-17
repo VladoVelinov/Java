@@ -1,5 +1,5 @@
 package OOP.abstraction.collections;
 
-public interface AddRemoveCollection extends AddCollection{
-    String remove();
+public interface AddRemoveCollection<T> extends AddCollection<T>{
+    T remove();
 }
