@@ -1,7 +1,53 @@
 package datastructures;
 
+import datastructures.tasks.MultiStack;
+
 public class Main {
     public static void main(String[] args) {
+        MultiStack();
+    }
+
+    private static void MultiStack() {
+        MultiStack<String> ms = new MultiStack<>(3);
+
+        ms.push(0, "st1-0");
+        ms.push(0, "st1-1");
+        ms.push(0, "st1-2");
+        ms.push(1, "st2-0");
+        ms.push(1, "st2-1");
+        ms.push(1, "st2-2");
+        ms.push(0, "st1-0");
+        ms.push(2, "st3-0");
+        ms.push(2, "st3-4");
+
+        for (int i = 0; i < 3; i++) {
+            printStack(ms, i);
+        }
+    }
+
+    private static void printStack(MultiStack<String> ms, int n) {
+        while(!ms.isEmpty(n)){
+            System.out.println(ms.peek(n));
+            ms.pop(n);
+        }
+    }
+
+    private static void queueMain() {
+        Queue<Integer> myqueue = new Queue<>();
+
+        myqueue.add(1);
+        myqueue.add(2);
+        myqueue.add(3);
+        myqueue.add(null);
+        myqueue.add(5);
+        myqueue.add(6);
+
+        while(!myqueue.isEmpty()){
+            System.out.println(myqueue.remove());
+        }
+    }
+
+    private static void stackMain(){
         Stack<Integer> myStack = new Stack<>();
 
         myStack.push(0);
@@ -17,7 +63,6 @@ public class Main {
         }
 
         myStack.pop();
-
     }
 
     private static void linkedListMain() {
