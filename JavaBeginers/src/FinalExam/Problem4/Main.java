@@ -81,5 +81,4 @@ public class Main {
         String res = vehicle.drive(distance);
         System.out.println(res);
     }
-
 }
