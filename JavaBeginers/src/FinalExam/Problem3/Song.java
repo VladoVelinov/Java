@@ -54,5 +54,4 @@ public class Song {
         this.setSongName(songName);
         this.setDuration(duration);
     }
-
 }

@@ -2,14 +2,12 @@ package FinalExam.Problem3;
 
 import FinalExam.Problem3.songexceptions.InvalidSongException;
 import FinalExam.Problem3.songexceptions.InvalidSongLengthException;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         mainOnlineRadioDatabase();
     }
-
 
     public static void mainOnlineRadioDatabase() {
         Scanner sc = new Scanner(System.in);

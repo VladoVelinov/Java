@@ -24,5 +24,4 @@ public class Playlist {
     public String printDuration() {
         return String.format("Playlist length: %s", length.toString());
     }
-
 }
