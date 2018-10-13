@@ -73,8 +73,7 @@ public class Main {
 
     private static void handleRefuelCommand(String token, Vehicle vehicle) {
         double fuel = Double.parseDouble(token);
-        String res = vehicle.refuel(fuel);
-//        System.out.println(res);
+        vehicle.refuel(fuel);
     }
 
     private static void handleDriveCommand(String token, Vehicle vehicle) {
