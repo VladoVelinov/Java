@@ -5,4 +5,9 @@ public class Car extends Vehicle {
         super(fuelQuantity, fuelConsumption);
         this.fuelConsumption += 0.9;
     }
+
+    @Override
+    public String refuel(double amount) {
+        return super.refuel((double) Math.round(amount * 100) / 100);
+    }
 }
