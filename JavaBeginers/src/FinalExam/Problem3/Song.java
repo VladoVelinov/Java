@@ -19,10 +19,6 @@ public class Song {
 
     }
 
-    public Song(String artistName, String songName, String duration) throws InvalidSongException {
-        SetFields(artistName, songName, duration);
-    }
-
     public SongDuration getDuration() {
         return duration;
     }
@@ -42,8 +38,7 @@ public class Song {
     }
 
     public void setDuration(String duration) throws InvalidSongLengthException {
-        SongDuration dur = new SongDuration(duration);
-        this.duration = dur;
+        this.duration = new SongDuration(duration);
     }
 
     @Override
@@ -51,7 +46,10 @@ public class Song {
         return String.format("%s/%s/%s", this.artistName, this.songName, this.duration.toString());
     }
 
-    private void SetFields(String artistName, String songName, String duration) throws InvalidArtistNameException, InvalidSongNameException, InvalidSongLengthException {
+    private void SetFields(String artistName, String songName, String duration) throws
+            InvalidArtistNameException,
+            InvalidSongNameException,
+            InvalidSongLengthException {
         this.setArtistName(artistName);
         this.setSongName(songName);
         this.setDuration(duration);
