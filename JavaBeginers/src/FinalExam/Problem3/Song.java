@@ -10,7 +10,7 @@ public class Song {
     private String songName;
     private SongDuration duration;
 
-    public Song(String input) throws InvalidSongException, InvalidArtistNameException {
+    public Song(String input) throws InvalidSongException {
         String[] tokens = input.split(";");
         String artistName = tokens[0];
         String songName = tokens[1];
@@ -19,7 +19,7 @@ public class Song {
 
     }
 
-    public Song(String artistName, String songName, String duration) throws InvalidSongException, InvalidArtistNameException {
+    public Song(String artistName, String songName, String duration) throws InvalidSongException {
         SetFields(artistName, songName, duration);
     }
 
