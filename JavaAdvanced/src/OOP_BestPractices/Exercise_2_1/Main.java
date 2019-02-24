@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming.Exercise_2_1;
+package OOP_BestPractices.Exercise_2_1;
 
 public class Main {
     public static void main(String[] args) {
