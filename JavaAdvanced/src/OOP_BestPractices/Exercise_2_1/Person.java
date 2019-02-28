@@ -3,22 +3,27 @@ package OOP_BestPractices.Exercise_2_1;
 public class Person {
     private String id;
     private String firstName;
-    private String familyName;
+    private String lastName;
 
-    public String personalDetails() {
-
-        return String.format("Person: ID=%s Name: %s %s", id, firstName, familyName);
+    Person(String id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public String getId() {
+    public String personalDetails() {
+        return String.format("Person: Id=%s Name=%s %s", id, firstName, lastName);
+    }
+
+    String getId() {
         return id;
     }
 
-    public void setId(String id) {
+    void setId(String id) {
         this.id = id;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
@@ -26,11 +31,11 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getFamilyName() {
-        return familyName;
+    String getLastName() {
+        return lastName;
     }
 
-    public void setFamilyName(String familyName) {
-        this.familyName = familyName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
