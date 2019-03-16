@@ -1,34 +1,23 @@
 package OOP_BestPractices.Exercise_2_2;
 
-//import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
-
-
 public class Main {
-
-    private static double generateNumber(int lowerLimit, int upperLimit) {
-        return ((int) (ThreadLocalRandom.current().nextDouble(lowerLimit, upperLimit) * 100.0)) / 100.0;
-
-    }
-
     public static void main(String[] args) {
+        ShapeInventory myInventory = new ShapeInventory();
 
-       ShapeInventory myInventory = new ShapeInventory();
-//        Random r = new Random;
-        Rectangle testRemove = new Rectangle(2,2);
+        //add some control testing object
+        myInventory.addShape(new Rectangle(20, 20));
 
-        myInventory.addShape(testRemove);
+        //printing this object to confirm that he is created
         myInventory.displayInventory();
 
-        for (int i = 0; i < 3; i++) {
+        //adding more objects
+        myInventory.addShape(new Rectangle(10, 20));
+        myInventory.addShape(new Circle(5));
 
-            myInventory.addShape(new Rectangle(generateNumber(1, 100), generateNumber(1, 100)));
-            myInventory.addShape(new Circle(generateNumber(1, 10)));
+        //removing testing object
+        myInventory.removeShape(new Rectangle(20, 20));
 
-        }
-
-        myInventory.removeShape(new Rectangle(2,2));
+        //display remaining objects
         myInventory.displayInventory();
-
     }
 }

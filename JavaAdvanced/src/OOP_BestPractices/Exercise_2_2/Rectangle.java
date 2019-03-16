@@ -3,27 +3,21 @@ package OOP_BestPractices.Exercise_2_2;
 import java.util.Objects;
 
 public class Rectangle implements Shape {
-
     private double width;
     private double height;
 
     Rectangle(double width, double height) {
-
-        setHeight(height);
         setWidth(width);
-    }
-
-    private void setHeight(double height) {
-
-        this.height = height;
+        setHeight(height);
     }
 
     private void setWidth(double width) {
-
         this.width = width;
-
     }
 
+    private void setHeight(double height) {
+        this.height = height;
+    }
 
     @Override
     public double calculatePerimeter() {
@@ -37,7 +31,6 @@ public class Rectangle implements Shape {
 
     @Override
     public String shapeDetails() {
-
         final String shape = "Rectangle";
         double perimeter = calculatePerimeter();
         double surface = calculateSurface();
@@ -51,19 +44,16 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Rectangle rectangle = (Rectangle) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Rectangle rectangle = (Rectangle) obj;
         return Double.compare(rectangle.width, width) == 0 &&
                 Double.compare(rectangle.height, height) == 0;
     }
 
     @Override
     public int hashCode() {
-
         return Objects.hash(width, height);
     }
-
 }
-

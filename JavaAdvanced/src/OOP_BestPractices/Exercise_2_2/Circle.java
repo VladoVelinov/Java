@@ -6,30 +6,25 @@ public class Circle implements Shape {
     private double radius;
 
     Circle(double radius) {
-
         setRadius(radius);
     }
 
     private void setRadius(double radius) {
-
         this.radius = radius;
     }
 
     @Override
     public double calculatePerimeter() {
-
         return 2 * Math.PI * radius;
     }
 
     @Override
     public double calculateSurface() {
-
         return Math.PI * radius * radius;
     }
 
     @Override
     public String shapeDetails() {
-
         final String shape = "Circle";
         double perimeter = calculatePerimeter();
         double surface = calculateSurface();
@@ -51,7 +46,6 @@ public class Circle implements Shape {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(radius);
     }
 }

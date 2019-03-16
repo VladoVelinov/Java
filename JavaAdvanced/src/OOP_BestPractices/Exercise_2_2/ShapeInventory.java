@@ -15,22 +15,13 @@ class ShapeInventory {
     }
 
     void displayInventory() {
-
         if (this.shapes.isEmpty()) {
-
             System.out.println("Inventory is Empty!");
             return;
-
         }
 
         for (Shape shape : this.shapes) {
-
             System.out.println(shape.shapeDetails());
-
         }
     }
-
 }
-
-
-
