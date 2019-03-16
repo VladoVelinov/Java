@@ -1,29 +1,57 @@
 package OOP_BestPractices.Exercise_2_2;
 
-public abstract class Circle implements Shape {
+import java.util.Objects;
+
+public class Circle implements Shape {
     private double radius;
 
-    public Double calculatePerimeter() {
-        return 2.0 * Math.PI * radius;
+    Circle(double radius) {
+
+        setRadius(radius);
     }
 
-    public Double calculateSurface() {
-        return Math.PI * Math.pow(radius, 2);
-    }
+    private void setRadius(double radius) {
 
-    public String shapeDetails() {
-        String str = "The type is Circle! ";
-        str+="Radius is: "+getRadius()+". ";
-        str+="Perimeter is: "+calculatePerimeter()+". ";
-        str+=" Surface is: "+calculateSurface()+".";
-        return str;
-    }
-
-    public double getRadius() {
-        return this.radius;
-    }
-
-    public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public double calculatePerimeter() {
+
+        return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public double calculateSurface() {
+
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public String shapeDetails() {
+
+        final String shape = "Circle";
+        double perimeter = calculatePerimeter();
+        double surface = calculateSurface();
+
+        return String.format("Shape type: %s \nHas radius of: %.2f \nHas perimeter of: %.2f \nHas surface of: %.2f\n"
+                , shape
+                , this.radius
+                , perimeter
+                , surface);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(circle.radius, radius) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(radius);
     }
 }

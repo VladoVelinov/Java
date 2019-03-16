@@ -1,7 +1,7 @@
 package OOP_BestPractices.Exercise_2_2;
 
-interface Shape {
-    Double calculatePerimeter();
-    Double calculateSurface();
+public interface Shape {
+    double calculatePerimeter();
+    double calculateSurface();
     String shapeDetails();
 }

@@ -1,39 +1,69 @@
 package OOP_BestPractices.Exercise_2_2;
 
-public abstract class Rectangle implements Shape {
+import java.util.Objects;
+
+public class Rectangle implements Shape {
+
     private double width;
     private double height;
 
-    public Double calculatePerimeter() {
-        return 2.0 * (this.width + this.height);
+    Rectangle(double width, double height) {
+
+        setHeight(height);
+        setWidth(width);
     }
 
-    public Double calculateSurface() {
-        return this.width * this.height;
-    }
+    private void setHeight(double height) {
 
-    public String shapeDetails() {
-        String str = "The type is Rectangle! ";
-        str+="Width is: "+getWidth()+". ";
-        str+="Height is: "+getHeight()+". ";
-        str+="Perimeter is: "+calculatePerimeter()+". ";
-        str+="Surface is: "+calculateSurface()+".";
-        return str;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
         this.height = height;
     }
+
+    private void setWidth(double width) {
+
+        this.width = width;
+
+    }
+
+
+    @Override
+    public double calculatePerimeter() {
+        return 2 * width + 2 * height;
+    }
+
+    @Override
+    public double calculateSurface() {
+        return width * height;
+    }
+
+    @Override
+    public String shapeDetails() {
+
+        final String shape = "Rectangle";
+        double perimeter = calculatePerimeter();
+        double surface = calculateSurface();
+
+        return String.format("Shape type: %s \nHas width of: %.2f \nHas height of: %.2f \nHas perimeter of: %.2f \nHas surface of: %.2f\n"
+                , shape
+                , this.width
+                , this.height
+                , perimeter
+                , surface);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return Double.compare(rectangle.width, width) == 0 &&
+                Double.compare(rectangle.height, height) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(width, height);
+    }
+
 }
+
