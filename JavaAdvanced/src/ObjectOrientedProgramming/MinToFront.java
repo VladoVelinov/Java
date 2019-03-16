@@ -22,7 +22,6 @@ public class MinToFront {
         myList.add(9);
 
         minToFront(myList);
-
     }
 
     private static void minToFront(ArrayList<Integer> myList) {

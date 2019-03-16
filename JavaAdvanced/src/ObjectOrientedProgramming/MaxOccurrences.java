@@ -29,20 +29,20 @@ public class MaxOccurrences {
     private static int maxOccurrences(List<Integer> myList) {
         HashMap<Integer, Integer> counts = new HashMap<>();
         int maxOccurrences = 0;
+
         for (int i : myList) {
             Integer count = counts.get(i);
             if (count == null) {
                 counts.put(i, 1);
             } else {
                 counts.put(i, ++count);
-
             }
         }
 
         for (int key : counts.keySet()) {
-            int occurrencs = counts.get(key);
-            if (occurrencs > maxOccurrences) {
-                maxOccurrences = occurrencs;
+            int occurrences = counts.get(key);
+            if (occurrences > maxOccurrences) {
+                maxOccurrences = occurrences;
             }
         }
         return maxOccurrences;

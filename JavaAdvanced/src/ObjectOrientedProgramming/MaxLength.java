@@ -8,7 +8,7 @@ package ObjectOrientedProgramming;
 
 import java.util.ArrayList;
 
-public class MaxLenght {
+public class MaxLength {
     public static void main(String[] args) {
         ArrayList<String> myList = new ArrayList<>();
         myList.add("dog");
@@ -19,12 +19,13 @@ public class MaxLenght {
     }
 
     private static int maxLength(ArrayList<String> string) {
-        int maxLenght = 0;
+        int maxLength = 0;
+
         for (String aString : string) {
-            int currLenght = aString.length();
-            if (currLenght > maxLenght)
-                maxLenght = currLenght;
+            int currLength = aString.length();
+            if (currLength > maxLength)
+                maxLength = currLength;
         }
-        return maxLenght;
+        return maxLength;
     }
 }

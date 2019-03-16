@@ -37,10 +37,9 @@ public class Rarest {
 
     private static int rarest(Map<String, Integer> map) {
         Map<Integer, Integer> result = new TreeMap<>();
-        Iterator<String> iterator = map.keySet().iterator();
 
-        while (iterator.hasNext()) {
-            int num = map.get(iterator.next());
+        for (String s : map.keySet()) {
+            int num = map.get(s);
             if (result.containsKey(num)) {
                 result.put(num, result.get(num) + 1);
             } else {

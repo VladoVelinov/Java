@@ -27,7 +27,6 @@ public class CountCommon {
             if (set1.contains(n))
                 count++;
         }
-
         return count;
     }
 }

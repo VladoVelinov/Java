@@ -19,10 +19,10 @@ package ObjectOrientedProgramming;
 public class BankInterest {
     public static void main(String[] args) {
         System.out.println("Year Current Balance Interest New Deposit New Balance");
-        printTtable();
+        printTable();
     }
 
-    private static void printTtable() {
+    private static void printTable() {
         int year=1;
         double currentBalance=1000.00;
         double interest;
