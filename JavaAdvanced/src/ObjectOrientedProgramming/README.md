@@ -1,6 +1,6 @@
-# 1. Object Oriented Programming in Java
+# 1. Object Oriented Programming in Java.
 
-## Exercises
+## Exercises:
 
 ### Exercise 1.1*
 Write a method called printSquare that takes in two integer parameters, a min and a max, and prints the numbers in the 
@@ -105,3 +105,5 @@ If there is a tie (two or more rarest ages that occur the same number of times),
 For example, if we added another pair of Kelly=22 to the map above, there would now be a tie of three people of age 20
 (Jeff, Kasey, Kim) and three people of age 22 (Alyssa, Kelly, Stef). So a call of rarest(m) would now return 20 because
 20 is the smaller of the rarest values.
+
+By Vladislav Velinov.
