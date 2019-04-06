@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Exercises;
 
 public class BankInterest {
     public static void main(String[] args) {

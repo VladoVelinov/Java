@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Exercises;
 
 public class PrintSquare {
     public static void main(String[] args) {

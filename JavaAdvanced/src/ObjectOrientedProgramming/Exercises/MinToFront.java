@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Exercises;
 
 import java.util.ArrayList;
 

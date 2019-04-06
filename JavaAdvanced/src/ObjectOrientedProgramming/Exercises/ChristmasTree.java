@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Exercises;
 
 public class ChristmasTree {
     private static final int SEGMENTS = 3;
