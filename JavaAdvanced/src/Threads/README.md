@@ -3,19 +3,19 @@
 ## Exercises:
 
 ### Exercise 1 - Task
-Write a program that creates a class called Task. Task will implement the Runnable interface. Create several threads 
+Write a program that creates a class called **Task**. Task will implement the Runnable interface. Create several threads 
 using instances of Task and start them. Make the run method print some messages, so that you can observe how the thread 
 executions are progressing.
 
 ### Exercise 2 - Message Printer
-Create a class MsgPrinter, whose method printMsg(String msg) stores the message in the currentMsg field and then prints 
-it. Create a class MsgGenerator that implements Runnable. The run method of MsgGenerator calls the printMsg of the 
-MsgPrinter. Create three threads from three instances of MsgGenerator. Make each Thread print different message for 
-example, thread 1 prints "You've", thread 2 prints "gotta", and thread 3 prints "kidding me!". Do the message generator 
-threads require synchronization? 
+Create a class **MsgPrinter**, whose method printMsg(String msg) stores the message in the currentMsg field and then 
+prints it. Create a class **MsgGenerator** that implements Runnable. The run method of MsgGenerator calls the printMsg 
+of the MsgPrinter. Create three threads from three instances of MsgGenerator. Make each Thread print different message 
+for example, thread 1 prints "You've", thread 2 prints "gotta", and thread 3 prints "kidding me!". Do the message 
+generator threads require synchronization? 
 
 ### Exercise 3 - Message Channel
-Write a simple message channel application. Create a MsgChannel class that can hold one message. Create one thread 
+Write a simple message channel application. Create a **MsgChannel** class that can hold one message. Create one thread 
 called MsgConsumer that takes the message from the channel and prints it. Create three threads using a class MsgProducer 
 that put messages in the channel. We do not want messages to get overwritten and lost.
 
@@ -79,3 +79,6 @@ Currently, the transfer method of the Bank class in Exercise 5 has the following
 If the account does not have sufficient funds, then do not make the transaction and return. Improve the code by making 
 it wait for somebody else to deposit money in the account and the funds become sufficient and then complete the 
 transaction.
+
+
+_Made By Vladislav Velinov._
