@@ -1,4 +1,4 @@
-# 2. OOP - Best Practices
+# OOP - Best Practices.
 
 ## Exercise 2.1
 
