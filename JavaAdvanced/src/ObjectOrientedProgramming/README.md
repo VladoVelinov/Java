@@ -40,6 +40,7 @@ Banana-fana fo-Fent
 Fee-fi-mo-Ment
 CENT!
 ````````
+</details>
 
 ### Exercise 1.4
 A certain bank offers 6.5% interest on savings accounts, compounded annually. Create a table that shows how much money 
@@ -58,6 +59,7 @@ Year Current Balance Interest New Deposit New Balance
  ... 
 25       9542,88      620,29     100,00    10263,16
 ````````
+</details>
 
 ### Exercise 1.5*
 Write a program that produces images of Christmas trees as output. It should have a method with two parameters: one
