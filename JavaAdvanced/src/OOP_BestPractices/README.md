@@ -1,6 +1,8 @@
 # OOP - Best Practices.
 
-## Exercise 2.1
+## Exercises:
+
+### Exercise 2.1
 
 Define a class Person with properties id, firstName, and familyName. The method personalDetails() of Person returns the 
 full name. Define a class Student that inherits from Person. The Student has a grade. It overrides the personalDetails() 
@@ -13,7 +15,7 @@ generateReport() method, that prints the personal details of all contained Perso
 several Student and Worker objects to the HumanResources class, then call the generateReport() method. Create an UML 
 class diagram that reflects the classes in the problem.
 
-## Exercise 2.2
+### Exercise 2.2
 
 Define an interface Shape with three methods: calculatePerimeter(), calculateSurface(), and shapeDetails(). 
 Define two classes, Rectangle and Circle, that implement Shape. The rectangle needs to have the properties width and 
@@ -27,13 +29,13 @@ Write a program, that creates several Rectangles and Circle objects with differe
 hapeInventory, then call the displayInventory method. Create an UML class diagram that reflects the classes in the 
 problem.
 
-## Exercise 2.3 - Optional
+### Exercise 2.3 - Optional
 
 Read the following chapter (in Bulgarian) about the best practices in writing code:
 
 [Writing quality code](https://introprogramming.info/intro-java-book/read-online/glava21-kachestven-programen-kod/)
 
-## Exercise 2.4 - Optional
+### Exercise 2.4 - Optional
 
 For those that like to dig a little deeper, here is some info about the design patterns that we mentioned in class. 
 Here is the link to the wikipedia article about the original book. Inside that article are the links to the individual 
