@@ -1,9 +1,3 @@
-/*
-Exercise 1.6:
-Write a method maxLength that takes an ArrayList of Strings as a parameter and that returns the length of the longest
-string in the list. If your method is passed an empty list, it should return 0.
-Made by Vladislav Velinov.
-*/
 package ObjectOrientedProgramming;
 
 import java.util.ArrayList;

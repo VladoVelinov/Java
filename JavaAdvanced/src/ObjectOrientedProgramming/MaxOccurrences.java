@@ -1,13 +1,8 @@
-/*
-Exercise 1.9:
-Write a method maxOccurrences that accepts a List of integers as a parameter and returns the number of times the most
-frequently occurring integer (the "mode") occurs in the list. Solve this problem using a Map as auxiliary storage.
-If the list is empty, return 0.
-Made by Vladislav Velinov.
-*/
 package ObjectOrientedProgramming;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class MaxOccurrences {
     public static void main(String[] args) {
