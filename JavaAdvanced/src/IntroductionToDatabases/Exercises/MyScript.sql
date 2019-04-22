@@ -332,3 +332,6 @@ CREATE TABLE `deposits` (
   KEY `_idx` (`userId`),
   CONSTRAINT `fk_deposit_users` FOREIGN KEY (`userId`) REFERENCES `users` (`id`)
 );
+
+-- Elegantnoto reshenie za problema EEST Time Zone na MySQL
+SET GLOBAL time_zone = '+2:00';
